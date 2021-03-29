@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="总说要多读书，多经历，我知道这是为了享受宝贵的人生，也增进对这个世界的认识。前几天想着树立正确是非观的重要性，写了前面的一篇博文，这个问题依然萦绕在我的脑海。昨天突然想到了一个模型，似乎让我对认识世界有了更深的理解。 这个世界就是一个“黑箱（Black Box）”。我们无法直观地认识这个世界的运行规律，我们所能观察的，仅仅是行为（输入）以及与此对应的结果（输出）。正是通过分析这些”输入、输出“的关">
+<meta property="og:type" content="article">
+<meta property="og:title" content="世界是个“黑箱” &amp; 如何认识它">
+<meta property="og:url" content="http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/index.html">
+<meta property="og:site_name" content="狱中奇思">
+<meta property="og:description" content="总说要多读书，多经历，我知道这是为了享受宝贵的人生，也增进对这个世界的认识。前几天想着树立正确是非观的重要性，写了前面的一篇博文，这个问题依然萦绕在我的脑海。昨天突然想到了一个模型，似乎让我对认识世界有了更深的理解。 这个世界就是一个“黑箱（Black Box）”。我们无法直观地认识这个世界的运行规律，我们所能观察的，仅仅是行为（输入）以及与此对应的结果（输出）。正是通过分析这些”输入、输出“的关">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2014-03-31T10:11:14.000Z">
+<meta property="article:modified_time" content="2021-03-29T02:42:49.116Z">
+<meta property="article:author" content="xr h">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>世界是个“黑箱” &amp; 如何认识它</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2014/05/01/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%A6%96/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E9%BB%91%E7%AE%B1/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&text=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&is_video=false&description=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=世界是个“黑箱” &amp; 如何认识它&body=Check out this article: http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&name=世界是个“黑箱” &amp; 如何认识它&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&t=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        世界是个“黑箱” &amp; 如何认识它
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">xr h</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2014-03-31T10:11:14.000Z" itemprop="datePublished">2014-03-31</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>总说要多读书，多经历，我知道这是为了享受宝贵的人生，也增进对这个世界的认识。前几天想着树立正确是非观的重要性，写了前面的一篇博文，这个问题依然萦绕在我的脑海。昨天突然想到了一个模型，似乎让我对认识世界有了更深的理解。</p>
+<p>这个世界就是一个“黑箱（Black Box）”。我们无法直观地认识这个世界的运行规律，我们所能观察的，仅仅是行为（输入）以及与此对应的结果（输出）。正是通过分析这些”输入、输出“的关系，我们得以近似知道世界的“本来面目”。至于为什么要知道它的“本来面目”，前一篇博文已有所提及——做真正正确的事。以下是我对这个过程的一些想法。</p>
+<p>有些人出身好，刚开始晓事时，他们的父母就为其提供了可靠的“输入-输出”样本，并且对此做出准确的分析。这样的人幼时较同龄人自然更明白世事，也容易在起始阶段学会分析案例的方法。</p>
+<p>有些人悟性好，对于同样的“输入-输出”样本，他们能在同样的时间内比常人分析得更透彻，所得到的“模型”也更加接近“本来面目”。</p>
+<p>有些人勤奋，他们积极地去体验，增长阅历，增加可供分析的样本。</p>
+<p>有些人努力，对于同样的样本，他们付出更多的精力分析其因果缘由，直到从中习得一些法则。</p>
+<p>这些出身好、悟性好、努力、勤奋的人，通过分析样本，对于这个世界的本来面目有了自己的看法，他们所建立的模型也更加近似于真实。因而他们知道某种“输入”会带来特定的“输出”，也清楚所期望的“输出”对应的是什么样的“输入”。亦即知道什么行为是有害的，也清楚为了得到有利的结果需要付出什么。虽然仅仅知道该付出哪些行动还不够，但这已经是极大的跨越。</p>
+<p>与之相对的，那些出身不好、悟性不高、样本不足、钻研不深的人，对这个世界自然所知寥寥。更多的情况是，他们懒于经历、懒于思考，而是跟从了大多数人的行为，以为这样就保险了。殊不知这“大多数人”也一样只是随波逐流，不知道该做什么，不清楚是非善恶，行为结果常常事与愿违，因而这”大多数人“就这样消磨着愚昧的人生。</p>
+<p>所以为了远离一些愚昧，我所能做的就是多积累样本，同时努力进行分析。归结到日常行为中，不过是多读书，多经历，多交流，多思考。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&text=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&is_video=false&description=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=世界是个“黑箱” &amp; 如何认识它&body=Check out this article: http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&title=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&name=世界是个“黑箱” &amp; 如何认识它&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://unixrh.github.io/2014/03/31/%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E2%80%9C%E9%BB%91%E7%AE%B1%E2%80%9D%20&amp;%20%E5%A6%82%E4%BD%95%E8%AE%A4%E8%AF%86%E5%AE%83/&t=世界是个“黑箱” &amp; 如何认识它"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2021
+    xr h
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
